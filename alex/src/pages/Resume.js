@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const Resume = () => {
   return (
@@ -241,6 +242,7 @@ const Resume = () => {
           Michael Gibbs, Kamy Henson, Kara Kunz, Jesse Kahat
         </p>
       </div>
+      <Footer />
     </div>
   );
 };
