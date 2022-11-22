@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Nav />
+        <Navbar />
+        <Header />
       </header>
       <main>
         <Routes>

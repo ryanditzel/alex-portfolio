@@ -1,12 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import "../styles/resume.css";
 
 const Resume = () => {
   return (
     <div className="resume-page">
-      <Header />
       <div className="resume-container">
         <div className="resume-header">
           <h2 className="resume-h2">Performance Experience</h2>
