@@ -3,8 +3,12 @@ import React from "react";
 const Header = () => {
   return (
     <div className="header">
-      <div className="fullname">Alex Tenreiro Theis</div>
-      <div className="titles">DANCER ~ CHOREOGRAPHER ~ TEACHER</div>
+      <div className="fullname">
+        <h1>Alex Tenreiro Theis</h1>
+      </div>
+      <div className="titles">
+        <h2>DANCER ~ CHOREOGRAPHER ~ TEACHER</h2>
+      </div>
     </div>
   );
 };

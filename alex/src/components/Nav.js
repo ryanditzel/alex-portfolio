@@ -1,17 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Nav = () => {
+const nav = () => {
   return (
-    <div className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="about">About</Link>
-      <Link to="photos">Photos</Link>
-      <Link to="videos">Videos</Link>
-      <Link to="resume">Resume</Link>
-      <Link to="contact">Contact</Link>
-    </div>
+    <Navbar fixed="top" bg="light" expand="md" variant="light">
+      <Container>
+        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Nav.Link href="/about">About</Nav.Link>
+        <Nav.Link href="/resume">Resume</Nav.Link>
+        <Nav.Link href="/contact">Contact</Nav.Link>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Media" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/photos">Photos</NavDropdown.Item>
+              <NavDropdown.Item href="/videos">Videos</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Nav;
+export default nav;
