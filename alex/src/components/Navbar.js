@@ -3,16 +3,16 @@ import "../styles/navbar.css";
 
 const Navbar = () => {
   return (
-    <div class="navbar">
+    <div className="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/resume">Resume</a>
-      <div class="dropdown">
-        <button class="dropbtn">
+      <div className="dropdown">
+        <button className="dropbtn">
           Media
-          <i class="fa fa-caret-down"></i>
+          <i className="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/photos">Photos</a>
           <a href="/videos">Videos</a>
         </div>

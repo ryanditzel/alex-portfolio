@@ -1,10 +1,9 @@
 import React from "react";
-import { MemoryRouter, Switch, Route } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <h7>Photograph by Ezra Goh</h7>
+      <h6>Photograph by Ezra Goh</h6>
     </div>
   );
 };
